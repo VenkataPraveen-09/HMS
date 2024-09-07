@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Login.css">
+        <title>Login Page</title>
+
+    </head>
+    <body>
+        <h1 style="text-align: center;">Admission Desk Login Page</h1>
+        <div class="f1">
+            <form method="get" action="Patient.html">
+                <label>U ID : </label><input type="text" minlength="8" required><br><br>
+                <label>Password : </label><input type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}"
+                title="Password must be at least 10 characters long, include at least one number, one uppercase letter, one lowercase letter, and one special character."><br><br>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
